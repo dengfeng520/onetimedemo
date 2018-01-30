@@ -19,9 +19,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [OneTimeClass sharedOneTimeClass];
-    [[OneTimeClass alloc]init];
-    
+    OneTimeClass *onetime1 = [OneTimeClass sharedOneTimeClass];
+    NSLog(@"shared:============%@",onetime1);
+    OneTimeClass *onetime2 = [[OneTimeClass alloc]init];
+    NSLog(@"alloc:============%@",onetime2);
+
 }
 
 

@@ -12,5 +12,7 @@
 
 ///获取使用实例
 +(OneTimeClass *)sharedOneTimeClass;
+///
+
 
 @end

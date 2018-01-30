@@ -9,18 +9,19 @@
 #import "OneTimeClass.h"
 
 static OneTimeClass *__onetimeClass;
+
 @implementation OneTimeClass
 
 ///在整个文件被加载到运行时，在main函数调用之前调用
 +(void)load
 {
-    printf("\n\nOneTimeClass load()");
+//    printf("\n\nOneTimeClass load()");
 }
 
 //第一次调用该类时调用
 +(void)initialize
 {
-//    [OneTimeClass sharedOneTimeClass];
+    [OneTimeClass sharedOneTimeClass];
 }
 
 
@@ -29,12 +30,19 @@ static OneTimeClass *__onetimeClass;
 +(OneTimeClass *)sharedOneTimeClass
 {
     
+//    @synchronized(self){
+//
+//        if (__onetimeClass == nil) {
+//
+//            __onetimeClass = [[OneTimeClass alloc]  init];
+//        }
+//    }
     static dispatch_once_t oneToken;
-    
+
     dispatch_once(&oneToken, ^{
-        
+
         __onetimeClass = [[OneTimeClass alloc]init];
-        
+
     });
     
     return __onetimeClass;
@@ -47,12 +55,13 @@ static OneTimeClass *__onetimeClass;
      //如果已经初始化了
     if(__onetimeClass)
     {
+//        NSException *exception = [NSException exceptionWithName:@"报错" reason:@"OneTimeClass类只能初始化一次" userInfo:nil];
+//        [exception raise];
 
-        NSException *exception = [NSException exceptionWithName:@"报错" reason:@"OneTimeClass类只能初始化一次" userInfo:nil];
-        [exception raise];
+        return  __onetimeClass;
     }
 
-    return __onetimeClass;
+    return [super alloc];
 }
 
 @end
