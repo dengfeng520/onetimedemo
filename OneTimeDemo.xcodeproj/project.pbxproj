@@ -13,26 +13,8 @@
 		1C067EC1201FFBE00045241B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C067EC0201FFBE00045241B /* Assets.xcassets */; };
 		1C067EC4201FFBE00045241B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C067EC2201FFBE00045241B /* LaunchScreen.storyboard */; };
 		1C067EC7201FFBE00045241B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C067EC6201FFBE00045241B /* main.m */; };
-		1C067ED1201FFBE00045241B /* OneTimeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C067ED0201FFBE00045241B /* OneTimeDemoTests.m */; };
-		1C067EDC201FFBE00045241B /* OneTimeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C067EDB201FFBE00045241B /* OneTimeDemoUITests.m */; };
+		1C067EEB201FFC880045241B /* OneTimeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C067EEA201FFC880045241B /* OneTimeClass.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		1C067ECD201FFBE00045241B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1C067EAC201FFBE00045241B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C067EB3201FFBE00045241B;
-			remoteInfo = OneTimeDemo;
-		};
-		1C067ED8201FFBE00045241B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 1C067EAC201FFBE00045241B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1C067EB3201FFBE00045241B;
-			remoteInfo = OneTimeDemo;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1C067EB4201FFBE00045241B /* OneTimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneTimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,30 +27,16 @@
 		1C067EC3201FFBE00045241B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C067EC5201FFBE00045241B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C067EC6201FFBE00045241B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1C067ECC201FFBE00045241B /* OneTimeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTimeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C067ED0201FFBE00045241B /* OneTimeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneTimeDemoTests.m; sourceTree = "<group>"; };
 		1C067ED2201FFBE00045241B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C067ED7201FFBE00045241B /* OneTimeDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneTimeDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C067EDB201FFBE00045241B /* OneTimeDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneTimeDemoUITests.m; sourceTree = "<group>"; };
 		1C067EDD201FFBE00045241B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C067EE9201FFC880045241B /* OneTimeClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneTimeClass.h; sourceTree = "<group>"; };
+		1C067EEA201FFC880045241B /* OneTimeClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneTimeClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1C067EB1201FFBE00045241B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1C067EC9201FFBE00045241B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1C067ED4201FFBE00045241B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,8 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				1C067EB4201FFBE00045241B /* OneTimeDemo.app */,
-				1C067ECC201FFBE00045241B /* OneTimeDemoTests.xctest */,
-				1C067ED7201FFBE00045241B /* OneTimeDemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +71,8 @@
 				1C067EB8201FFBE00045241B /* AppDelegate.m */,
 				1C067EBA201FFBE00045241B /* ViewController.h */,
 				1C067EBB201FFBE00045241B /* ViewController.m */,
+				1C067EE9201FFC880045241B /* OneTimeClass.h */,
+				1C067EEA201FFC880045241B /* OneTimeClass.m */,
 				1C067EBD201FFBE00045241B /* Main.storyboard */,
 				1C067EC0201FFBE00045241B /* Assets.xcassets */,
 				1C067EC2201FFBE00045241B /* LaunchScreen.storyboard */,
@@ -152,42 +120,6 @@
 			productReference = 1C067EB4201FFBE00045241B /* OneTimeDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1C067ECB201FFBE00045241B /* OneTimeDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1C067EE3201FFBE00045241B /* Build configuration list for PBXNativeTarget "OneTimeDemoTests" */;
-			buildPhases = (
-				1C067EC8201FFBE00045241B /* Sources */,
-				1C067EC9201FFBE00045241B /* Frameworks */,
-				1C067ECA201FFBE00045241B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1C067ECE201FFBE00045241B /* PBXTargetDependency */,
-			);
-			name = OneTimeDemoTests;
-			productName = OneTimeDemoTests;
-			productReference = 1C067ECC201FFBE00045241B /* OneTimeDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		1C067ED6201FFBE00045241B /* OneTimeDemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1C067EE6201FFBE00045241B /* Build configuration list for PBXNativeTarget "OneTimeDemoUITests" */;
-			buildPhases = (
-				1C067ED3201FFBE00045241B /* Sources */,
-				1C067ED4201FFBE00045241B /* Frameworks */,
-				1C067ED5201FFBE00045241B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1C067ED9201FFBE00045241B /* PBXTargetDependency */,
-			);
-			name = OneTimeDemoUITests;
-			productName = OneTimeDemoUITests;
-			productReference = 1C067ED7201FFBE00045241B /* OneTimeDemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,16 +132,6 @@
 					1C067EB3201FFBE00045241B = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-					};
-					1C067ECB201FFBE00045241B = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 1C067EB3201FFBE00045241B;
-					};
-					1C067ED6201FFBE00045241B = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 1C067EB3201FFBE00045241B;
 					};
 				};
 			};
@@ -227,8 +149,6 @@
 			projectRoot = "";
 			targets = (
 				1C067EB3201FFBE00045241B /* OneTimeDemo */,
-				1C067ECB201FFBE00045241B /* OneTimeDemoTests */,
-				1C067ED6201FFBE00045241B /* OneTimeDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -244,20 +164,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C067ECA201FFBE00045241B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1C067ED5201FFBE00045241B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -265,42 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C067EEB201FFC880045241B /* OneTimeClass.m in Sources */,
 				1C067EBC201FFBE00045241B /* ViewController.m in Sources */,
 				1C067EC7201FFBE00045241B /* main.m in Sources */,
 				1C067EB9201FFBE00045241B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1C067EC8201FFBE00045241B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C067ED1201FFBE00045241B /* OneTimeDemoTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1C067ED3201FFBE00045241B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C067EDC201FFBE00045241B /* OneTimeDemoUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		1C067ECE201FFBE00045241B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1C067EB3201FFBE00045241B /* OneTimeDemo */;
-			targetProxy = 1C067ECD201FFBE00045241B /* PBXContainerItemProxy */;
-		};
-		1C067ED9201FFBE00045241B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 1C067EB3201FFBE00045241B /* OneTimeDemo */;
-			targetProxy = 1C067ED8201FFBE00045241B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1C067EBD201FFBE00045241B /* Main.storyboard */ = {
@@ -454,64 +332,6 @@
 			};
 			name = Release;
 		};
-		1C067EE4201FFBE00045241B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PNQSRNMX9W;
-				INFOPLIST_FILE = OneTimeDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---rp.wang.OneTimeDemoTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneTimeDemo.app/OneTimeDemo";
-			};
-			name = Debug;
-		};
-		1C067EE5201FFBE00045241B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PNQSRNMX9W;
-				INFOPLIST_FILE = OneTimeDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---rp.wang.OneTimeDemoTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneTimeDemo.app/OneTimeDemo";
-			};
-			name = Release;
-		};
-		1C067EE7201FFBE00045241B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PNQSRNMX9W;
-				INFOPLIST_FILE = OneTimeDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---rp.wang.OneTimeDemoUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = OneTimeDemo;
-			};
-			name = Debug;
-		};
-		1C067EE8201FFBE00045241B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PNQSRNMX9W;
-				INFOPLIST_FILE = OneTimeDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "---rp.wang.OneTimeDemoUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = OneTimeDemo;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -529,24 +349,6 @@
 			buildConfigurations = (
 				1C067EE1201FFBE00045241B /* Debug */,
 				1C067EE2201FFBE00045241B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1C067EE3201FFBE00045241B /* Build configuration list for PBXNativeTarget "OneTimeDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1C067EE4201FFBE00045241B /* Debug */,
-				1C067EE5201FFBE00045241B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1C067EE6201FFBE00045241B /* Build configuration list for PBXNativeTarget "OneTimeDemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1C067EE7201FFBE00045241B /* Debug */,
-				1C067EE8201FFBE00045241B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
