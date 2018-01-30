@@ -20,12 +20,12 @@ static OneTimeClass *__onetimeClass;
 //第一次调用该类时调用
 +(void)initialize
 {
-    [OneTimeClass sharedOneTimeClass];
+//    [OneTimeClass sharedOneTimeClass];
 }
 
 
 
-//使用实例
+//获取使用实例
 +(OneTimeClass *)sharedOneTimeClass
 {
     
@@ -43,11 +43,11 @@ static OneTimeClass *__onetimeClass;
 
 + (instancetype)alloc
 {
-//     NSCAssert(!__onetimeClass, @"OneTimeClass类只能初始化一次");
+//     NSCAssert(__onetimeClass, @"OneTimeClass类只能初始化一次");
      //如果已经初始化了
     if(__onetimeClass)
     {
-        
+
         NSException *exception = [NSException exceptionWithName:@"报错" reason:@"OneTimeClass类只能初始化一次" userInfo:nil];
         [exception raise];
     }
