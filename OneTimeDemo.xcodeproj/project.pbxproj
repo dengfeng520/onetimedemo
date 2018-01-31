@@ -14,6 +14,8 @@
 		1C067EC4201FFBE00045241B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C067EC2201FFBE00045241B /* LaunchScreen.storyboard */; };
 		1C067EC7201FFBE00045241B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C067EC6201FFBE00045241B /* main.m */; };
 		1C067EEB201FFC880045241B /* OneTimeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C067EEA201FFC880045241B /* OneTimeClass.m */; };
+		1C3181D12021F44A00403222 /* SubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3181D02021F44A00403222 /* SubClass.m */; };
+		1C3181D42021F4B700403222 /* OneTimeClass+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3181D32021F4B700403222 /* OneTimeClass+Add.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,10 @@
 		1C067EDD201FFBE00045241B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C067EE9201FFC880045241B /* OneTimeClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneTimeClass.h; sourceTree = "<group>"; };
 		1C067EEA201FFC880045241B /* OneTimeClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneTimeClass.m; sourceTree = "<group>"; };
+		1C3181CF2021F44A00403222 /* SubClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubClass.h; sourceTree = "<group>"; };
+		1C3181D02021F44A00403222 /* SubClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubClass.m; sourceTree = "<group>"; };
+		1C3181D22021F4B700403222 /* OneTimeClass+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OneTimeClass+Add.h"; sourceTree = "<group>"; };
+		1C3181D32021F4B700403222 /* OneTimeClass+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OneTimeClass+Add.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,10 @@
 				1C067EBB201FFBE00045241B /* ViewController.m */,
 				1C067EE9201FFC880045241B /* OneTimeClass.h */,
 				1C067EEA201FFC880045241B /* OneTimeClass.m */,
+				1C3181CF2021F44A00403222 /* SubClass.h */,
+				1C3181D02021F44A00403222 /* SubClass.m */,
+				1C3181D22021F4B700403222 /* OneTimeClass+Add.h */,
+				1C3181D32021F4B700403222 /* OneTimeClass+Add.m */,
 				1C067EBD201FFBE00045241B /* Main.storyboard */,
 				1C067EC0201FFBE00045241B /* Assets.xcassets */,
 				1C067EC2201FFBE00045241B /* LaunchScreen.storyboard */,
@@ -172,6 +182,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C067EEB201FFC880045241B /* OneTimeClass.m in Sources */,
+				1C3181D12021F44A00403222 /* SubClass.m in Sources */,
+				1C3181D42021F4B700403222 /* OneTimeClass+Add.m in Sources */,
 				1C067EBC201FFBE00045241B /* ViewController.m in Sources */,
 				1C067EC7201FFBE00045241B /* main.m in Sources */,
 				1C067EB9201FFBE00045241B /* AppDelegate.m in Sources */,
