@@ -15,12 +15,14 @@ static OneTimeClass *__onetimeClass;
 ///在整个文件被加载到运行时，在main函数调用之前调用
 +(void)load
 {
-//    printf("\n\nOneTimeClass load()");
+    printf("\nOneTimeClass load()");
 }
+
 
 //第一次调用该类时调用
 +(void)initialize
 {
+    printf("\nOneTimeClass initialize()\n\n\n");
     [OneTimeClass sharedOneTimeClass];
 }
 
@@ -63,5 +65,7 @@ static OneTimeClass *__onetimeClass;
 
     return [super alloc];
 }
+
+
 
 @end

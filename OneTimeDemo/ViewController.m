@@ -22,8 +22,9 @@
     OneTimeClass *onetime1 = [OneTimeClass sharedOneTimeClass];
     NSLog(@"shared:============%@",onetime1);
     OneTimeClass *onetime2 = [[OneTimeClass alloc]init];
-    NSLog(@"alloc:============%@",onetime2);
-
+    NSLog(@"new:============%@",onetime2);
+    
+//    NSLog(@"new:============%@",[OneTimeClass new]);
 }
 
 
