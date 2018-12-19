@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "OneTimeClass.h"
 #import "SubClass.h"
 #import "OneTimeClass+Add.h"
 
@@ -30,7 +29,7 @@
     
     
 //    NSLog(@"SubClass:============%@",[SubClass new]);
-//    [[OneTimeClass sharedOneTimeClass] printstr];
+    [onetime1 printStr];
 }
 
 

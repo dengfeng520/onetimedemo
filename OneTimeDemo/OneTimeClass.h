@@ -17,4 +17,6 @@
 -(instancetype) copy __attribute__((unavailable("OneTimeClass类只能初始化一次")));
 -(instancetype) mutableCopy  __attribute__((unavailable("OneTimeClass类只能初始化一次")));
 
+
+
 @end
