@@ -23,7 +23,6 @@ static OneTimeClass *__onetimeClass;
 +(void)initialize
 {
     printf("\nOneTimeClass initialize()\n\n\n");
-    [OneTimeClass sharedOneTimeClass];
 }
 
 

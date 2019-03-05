@@ -29,6 +29,7 @@
     
     
 //    NSLog(@"SubClass:============%@",[SubClass new]);
+    // 单例分类使用
     [onetime1 printStr];
 }
 
