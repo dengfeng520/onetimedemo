@@ -10,7 +10,7 @@
 
 @implementation OneTimeClass (Add)
 
--(void)printStr{
+- (void)printStr {
     
     printf("\n\nOneTimeClass+Add");
 }

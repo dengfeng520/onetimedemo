@@ -13,23 +13,20 @@ static OneTimeClass *__onetimeClass;
 @implementation OneTimeClass
 
 ///在整个文件被加载到运行时，在main函数调用之前调用
-+(void)load
-{
++ (void)load {
     printf("\nOneTimeClass load()");
 }
 
 
 //第一次调用该类时调用
-+(void)initialize
-{
++ (void)initialize {
     printf("\nOneTimeClass initialize()\n\n\n");
 }
 
 
 
 //获取使用实例
-+(OneTimeClass *)sharedOneTimeClass
-{
++ (OneTimeClass *)sharedOneTimeClass {
     
 //    @synchronized(self){
 //
@@ -50,12 +47,10 @@ static OneTimeClass *__onetimeClass;
 }
 
 
-+ (instancetype)alloc
-{
++ (instancetype)alloc {
 //     NSCAssert(__onetimeClass, @"OneTimeClass类只能初始化一次");
      //如果已经初始化了
-    if(__onetimeClass)
-    {
+    if (__onetimeClass) {
 //        NSException *exception = [NSException exceptionWithName:@"报错" reason:@"OneTimeClass类只能初始化一次" userInfo:nil];
 //        [exception raise];
 

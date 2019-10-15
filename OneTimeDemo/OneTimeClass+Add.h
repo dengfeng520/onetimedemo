@@ -11,7 +11,7 @@
 @interface OneTimeClass (Add)
 
 
--(void)printStr;
+- (void)printStr;
 
 
 @end
