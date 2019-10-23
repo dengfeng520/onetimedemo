@@ -16,6 +16,8 @@
 		1C067EEB201FFC880045241B /* OneTimeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C067EEA201FFC880045241B /* OneTimeClass.m */; };
 		1C3181D12021F44A00403222 /* SubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3181D02021F44A00403222 /* SubClass.m */; };
 		1C3181D42021F4B700403222 /* OneTimeClass+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3181D32021F4B700403222 /* OneTimeClass+Add.m */; };
+		1DE77CC2236029BD007B2C60 /* deviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE77CC0236029BD007B2C60 /* deviceModel.m */; };
+		1DE77CC3236029BD007B2C60 /* RPKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE77CC1236029BD007B2C60 /* RPKeychain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,10 @@
 		1C3181D02021F44A00403222 /* SubClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubClass.m; sourceTree = "<group>"; };
 		1C3181D22021F4B700403222 /* OneTimeClass+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OneTimeClass+Add.h"; sourceTree = "<group>"; };
 		1C3181D32021F4B700403222 /* OneTimeClass+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OneTimeClass+Add.m"; sourceTree = "<group>"; };
+		1DE77CBE236029BD007B2C60 /* deviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deviceModel.h; sourceTree = "<group>"; };
+		1DE77CBF236029BD007B2C60 /* RPKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPKeychain.h; sourceTree = "<group>"; };
+		1DE77CC0236029BD007B2C60 /* deviceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deviceModel.m; sourceTree = "<group>"; };
+		1DE77CC1236029BD007B2C60 /* RPKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPKeychain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,16 +79,12 @@
 		1C067EB6201FFBE00045241B /* OneTimeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1DE77CBD23602997007B2C60 /* New Group */,
+				1DE77CBC2360296B007B2C60 /* single */,
 				1C067EB7201FFBE00045241B /* AppDelegate.h */,
 				1C067EB8201FFBE00045241B /* AppDelegate.m */,
 				1C067EBA201FFBE00045241B /* ViewController.h */,
 				1C067EBB201FFBE00045241B /* ViewController.m */,
-				1C067EE9201FFC880045241B /* OneTimeClass.h */,
-				1C067EEA201FFC880045241B /* OneTimeClass.m */,
-				1C3181CF2021F44A00403222 /* SubClass.h */,
-				1C3181D02021F44A00403222 /* SubClass.m */,
-				1C3181D22021F4B700403222 /* OneTimeClass+Add.h */,
-				1C3181D32021F4B700403222 /* OneTimeClass+Add.m */,
 				1C067EBD201FFBE00045241B /* Main.storyboard */,
 				1C067EC0201FFBE00045241B /* Assets.xcassets */,
 				1C067EC2201FFBE00045241B /* LaunchScreen.storyboard */,
@@ -108,6 +110,30 @@
 				1C067EDD201FFBE00045241B /* Info.plist */,
 			);
 			path = OneTimeDemoUITests;
+			sourceTree = "<group>";
+		};
+		1DE77CBC2360296B007B2C60 /* single */ = {
+			isa = PBXGroup;
+			children = (
+				1C067EE9201FFC880045241B /* OneTimeClass.h */,
+				1C067EEA201FFC880045241B /* OneTimeClass.m */,
+				1C3181CF2021F44A00403222 /* SubClass.h */,
+				1C3181D02021F44A00403222 /* SubClass.m */,
+				1C3181D22021F4B700403222 /* OneTimeClass+Add.h */,
+				1C3181D32021F4B700403222 /* OneTimeClass+Add.m */,
+			);
+			path = single;
+			sourceTree = "<group>";
+		};
+		1DE77CBD23602997007B2C60 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				1DE77CBE236029BD007B2C60 /* deviceModel.h */,
+				1DE77CC0236029BD007B2C60 /* deviceModel.m */,
+				1DE77CBF236029BD007B2C60 /* RPKeychain.h */,
+				1DE77CC1236029BD007B2C60 /* RPKeychain.m */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,9 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C067EEB201FFC880045241B /* OneTimeClass.m in Sources */,
+				1DE77CC2236029BD007B2C60 /* deviceModel.m in Sources */,
 				1C3181D12021F44A00403222 /* SubClass.m in Sources */,
 				1C3181D42021F4B700403222 /* OneTimeClass+Add.m in Sources */,
 				1C067EBC201FFBE00045241B /* ViewController.m in Sources */,
+				1DE77CC3236029BD007B2C60 /* RPKeychain.m in Sources */,
 				1C067EC7201FFBE00045241B /* main.m in Sources */,
 				1C067EB9201FFBE00045241B /* AppDelegate.m in Sources */,
 			);

@@ -17,13 +17,10 @@ static OneTimeClass *__onetimeClass;
     printf("\nOneTimeClass load()");
 }
 
-
 //第一次调用该类时调用
 + (void)initialize {
     printf("\nOneTimeClass initialize()\n\n\n");
 }
-
-
 
 //获取使用实例
 + (OneTimeClass *)sharedOneTimeClass {
