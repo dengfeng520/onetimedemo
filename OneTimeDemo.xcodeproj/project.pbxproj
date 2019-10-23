@@ -79,7 +79,7 @@
 		1C067EB6201FFBE00045241B /* OneTimeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				1DE77CBD23602997007B2C60 /* New Group */,
+				1DE77CBD23602997007B2C60 /* RPKeychain */,
 				1DE77CBC2360296B007B2C60 /* single */,
 				1C067EB7201FFBE00045241B /* AppDelegate.h */,
 				1C067EB8201FFBE00045241B /* AppDelegate.m */,
@@ -125,7 +125,7 @@
 			path = single;
 			sourceTree = "<group>";
 		};
-		1DE77CBD23602997007B2C60 /* New Group */ = {
+		1DE77CBD23602997007B2C60 /* RPKeychain */ = {
 			isa = PBXGroup;
 			children = (
 				1DE77CBE236029BD007B2C60 /* deviceModel.h */,
@@ -133,7 +133,7 @@
 				1DE77CBF236029BD007B2C60 /* RPKeychain.h */,
 				1DE77CC1236029BD007B2C60 /* RPKeychain.m */,
 			);
-			path = "New Group";
+			path = RPKeychain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
