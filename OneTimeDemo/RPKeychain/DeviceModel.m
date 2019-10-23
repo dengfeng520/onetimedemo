@@ -1,16 +1,20 @@
 //
-//  deviceModel.m
-//  KeyChainDemo
+//  DeviceModel.m
+//  OneTimeDemo
 //
-//  Created by rp.wang on 2018/7/7.
-//  Copyright © 2018年 兰州北科维拓科技股份有限公司. All rights reserved.
+//  Created by rp.wang on 2019/10/23.
+//  Copyright © 2019 兰州北科维拓科技股份有限公司. All rights reserved.
 //
 
-#import "deviceModel.h"
+#import "DeviceModel.h"
 #import <sys/utsname.h>
+#import "RPKeychain.h"
 
-@implementation deviceModel
+static NSString * const KEY_OABINDING_DEVICE = @"com.boxkj.BluetoothUUID";
+static NSString * const KEY_DEVEICE = @"com.boxkj.deveice";
+static NSString * const KEY_USERID = @"10008611";
 
+@implementation DeviceModel
 //MARK: - 查询用户是否绑定了当前设备
 - (BOOL)isBindingdevice {
     NSString *deviceStr = [NSString stringWithFormat:@"%@",[RPKeychain load:KEY_OABINDING_DEVICE]];
@@ -89,11 +93,14 @@
 }
 
 // MARK: - 保存到 Keychain中
-- (void)saveBindingStringWtihDevice {
-    NSString *deviceChar = [self detchDevicenumber];
+- (void)saveBindingDeviceWtihString:(NSString *)deviceChar {
     NSMutableDictionary *usernamepasswordKVPairs = [NSMutableDictionary dictionary];
     [usernamepasswordKVPairs setObject:deviceChar forKey:KEY_DEVEICE];
     [RPKeychain save:KEY_OABINDING_DEVICE data:usernamepasswordKVPairs];
 }
 
+// MARK: - 从Keychain中读取
+- (NSString *)loadDeviceData {
+   return [RPKeychain load:KEY_OABINDING_DEVICE];
+}
 @end

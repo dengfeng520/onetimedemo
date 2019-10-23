@@ -16,8 +16,8 @@
 		1C067EEB201FFC880045241B /* OneTimeClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C067EEA201FFC880045241B /* OneTimeClass.m */; };
 		1C3181D12021F44A00403222 /* SubClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3181D02021F44A00403222 /* SubClass.m */; };
 		1C3181D42021F4B700403222 /* OneTimeClass+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3181D32021F4B700403222 /* OneTimeClass+Add.m */; };
-		1DE77CC2236029BD007B2C60 /* deviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE77CC0236029BD007B2C60 /* deviceModel.m */; };
 		1DE77CC3236029BD007B2C60 /* RPKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE77CC1236029BD007B2C60 /* RPKeychain.m */; };
+		1DE77CCD23603139007B2C60 /* DeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DE77CCC23603139007B2C60 /* DeviceModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,10 +41,10 @@
 		1C3181D02021F44A00403222 /* SubClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubClass.m; sourceTree = "<group>"; };
 		1C3181D22021F4B700403222 /* OneTimeClass+Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OneTimeClass+Add.h"; sourceTree = "<group>"; };
 		1C3181D32021F4B700403222 /* OneTimeClass+Add.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OneTimeClass+Add.m"; sourceTree = "<group>"; };
-		1DE77CBE236029BD007B2C60 /* deviceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = deviceModel.h; sourceTree = "<group>"; };
 		1DE77CBF236029BD007B2C60 /* RPKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RPKeychain.h; sourceTree = "<group>"; };
-		1DE77CC0236029BD007B2C60 /* deviceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = deviceModel.m; sourceTree = "<group>"; };
 		1DE77CC1236029BD007B2C60 /* RPKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RPKeychain.m; sourceTree = "<group>"; };
+		1DE77CCB23603139007B2C60 /* DeviceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceModel.h; sourceTree = "<group>"; };
+		1DE77CCC23603139007B2C60 /* DeviceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +128,10 @@
 		1DE77CBD23602997007B2C60 /* RPKeychain */ = {
 			isa = PBXGroup;
 			children = (
-				1DE77CBE236029BD007B2C60 /* deviceModel.h */,
-				1DE77CC0236029BD007B2C60 /* deviceModel.m */,
 				1DE77CBF236029BD007B2C60 /* RPKeychain.h */,
 				1DE77CC1236029BD007B2C60 /* RPKeychain.m */,
+				1DE77CCB23603139007B2C60 /* DeviceModel.h */,
+				1DE77CCC23603139007B2C60 /* DeviceModel.m */,
 			);
 			path = RPKeychain;
 			sourceTree = "<group>";
@@ -208,7 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C067EEB201FFC880045241B /* OneTimeClass.m in Sources */,
-				1DE77CC2236029BD007B2C60 /* deviceModel.m in Sources */,
+				1DE77CCD23603139007B2C60 /* DeviceModel.m in Sources */,
 				1C3181D12021F44A00403222 /* SubClass.m in Sources */,
 				1C3181D42021F4B700403222 /* OneTimeClass+Add.m in Sources */,
 				1C067EBC201FFBE00045241B /* ViewController.m in Sources */,
